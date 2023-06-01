@@ -14,10 +14,11 @@ app.get('/', (req, res) => {
     title: 'Sample EJS Page',
     message: 'Welcome to my EJS page!'
   };
-  res.render('home', data);
+  res.send("hello")
 });
 
 const server = app.listen(() => {
   const address = server.address();
   console.log(`Server is listening on http://localhost:${address.port}/`);
 });
+ZZ
